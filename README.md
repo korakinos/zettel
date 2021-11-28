@@ -9,7 +9,7 @@ Works better when combined `vim` and [zettel-vim](https://github.com/grantmiille
 Stands for [Zettelkasten](https://zettelkasten.de/)
 
 ## The ID system
-This version uses the bash `date` command with `%Y%m%d%H%M%S` as the format string.
+This version uses the bash `date` command with `%Y%m%dT%H%M%S` as the format string. [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations)
 
 ## How to use
 Make sure the `zettel` bash script is in your execution path

@@ -26,7 +26,7 @@ ag_check() {
 }
 
 new_note() {
-  local id=$(date +"%Y%m%d%H%M%S")
+  local id=$(date +"%Y%m%dT%H%M%S")
   local note_name
   if [[ "$#" -gt 0 ]]; then
     note_name="$NOTE_DIR/$id $@.md"
@@ -83,7 +83,7 @@ find_tag() {
 }
 
 get_id() {
-  local id=$(echo "$1" | grep -Eo "[[:digit:]]{14}")
+  local id=$(echo "$1" | grep -Eo "[[:digit:]]{8}T[[:digit:]]{6}")
 
   if [[ $COPY_ID_FLAG -eq 1 ]]; then
     copy_string "$id"
