@@ -1,4 +1,4 @@
-# Zettel CLI
+# Zettel CLI -- **private fork**
 My version of a dead simple zettel CLI.
 
 WARNING: Requires [the silver searcher](https://github.com/ggreer/the_silver_searcher)
